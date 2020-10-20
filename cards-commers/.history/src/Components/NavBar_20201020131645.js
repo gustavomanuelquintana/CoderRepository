@@ -1,6 +1,5 @@
 import React from "react";
 import ImageNavBar from "../Images/cards-logo.png";
-import './NavBar.css';
 
 const styleFont = {
     fontSize: 20,
