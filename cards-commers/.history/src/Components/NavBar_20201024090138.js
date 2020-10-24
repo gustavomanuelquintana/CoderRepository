@@ -58,10 +58,7 @@ function NavBar() {
             </ul>
           </div>
           <div className="carrito-navBar col-1">
-            <a href="#">
-           { /*<img alt="" src={imageCarrito} width="70" height="70" />{" "}*/}
             <CartWidget />
-            </a>
           </div>
         </div>
       </div>
