@@ -4,10 +4,9 @@ import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
 import ItemCount from "./Components/ItemCount/ItemCount";
 
 function App() {
-  let stock= 14;
   const inCharge = (counter) => {
-    return ({stock}) => {
-      if (stock <=0){
+    return () => {
+      id (stock <=0){
         alert('No hay stock')
       }else {
         alert(`Se van agregar ${counter} articulos`)
@@ -19,7 +18,7 @@ function App() {
     <div className="App">
         <NavBar />
         <ItemListContainer titulo='Ofertas de la semana'/>
-        <ItemCount onAdd={inCharge}  stock={stock} initial={2} />
+        <ItemCount onAdd={inCharge}  stock="12" initial="4" />
     </div>
   );
 }
