@@ -1,14 +1,10 @@
 import React from 'react';
 import './ItemListContainer.css';
-import ItemList from './ItemList/ItemList';
 
 function ItemListContainer({titulo}){
     return (
         <div className="container">
-            <div className="sectionItems">
-            <ItemList />
-            </div>
-    <h1>{titulo}</h1>
+    <h1></h1>
     </div>
     )
 }

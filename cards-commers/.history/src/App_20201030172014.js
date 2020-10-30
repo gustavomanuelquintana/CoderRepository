@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
         <NavBar />
-        <ItemListContainer titulo='Aquí van los Items'/>
+        <ItemListContainer titulo='Probando'/>
         <ItemCount onAdd={handleAdd}  stock={stock} initial={2} />
     </div>
   );
