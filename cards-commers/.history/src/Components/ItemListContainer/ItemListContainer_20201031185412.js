@@ -11,8 +11,7 @@ import remeraAllstar from '../../Images/remera-allstar.jpg';
 
 const getList = () => {
     return new Promise( (res) => {
-        setTimeout( () => {
-            let products;
+        let products;
         res(
             products = [
                 {id:0, image:remeraNike, productName:'Remera',
@@ -35,7 +34,6 @@ const getList = () => {
                 color: 'Rojo',sku:'700020125628006', precio:'$1.800', cuotas:''}
             ]
         )
-        },2000);
     });
 }
 
