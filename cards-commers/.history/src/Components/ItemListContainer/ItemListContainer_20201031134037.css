@@ -1,0 +1,9 @@
+.container{
+    width:100%;
+    max-height:100vh;
+    margin: 0.25 auto;
+    pading: 35px;
+}
+.container h2{
+    text-align:center;
+}

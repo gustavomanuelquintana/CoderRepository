@@ -1,0 +1,20 @@
+.Item{
+    background-color: blue;
+    text-align:center;
+    height:200px;
+}
+.containerSection{
+    background: white;
+    max-height:200px;
+    height: 180px;
+    margin:0.60em auto;
+}
+
+
+
+.info p span{
+    font-weight: bold;
+    color: #dc3545;
+    font-size: 1.1em;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+}

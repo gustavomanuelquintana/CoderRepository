@@ -1,0 +1,16 @@
+.Item{
+    background-color: blue;
+    text-align:center;
+    height:200px;
+}
+.containerSection{
+    background: white;
+    max-height:200px;
+    height: 180px;
+    margin:0.60em auto;
+}
+
+.info p span{
+    font-weight: bold;
+    font-family:"monospace";
+}
