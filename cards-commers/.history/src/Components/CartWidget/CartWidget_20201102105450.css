@@ -1,0 +1,12 @@
+.imgCart{
+        height: 70px;
+        width: 70px;
+        border-Bottom:5px solid grey;
+}
+
+.imgCart:hover{
+    height: 70px;
+    width: 70px;
+    border-Bottom:5px solid orange;
+    cursor:pointer;
+}

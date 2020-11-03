@@ -1,0 +1,10 @@
+.ListItemContainer{
+    text-align:center;
+    height:auto;
+    margin:auto;
+    padding:40px;
+}
+
+.info{
+    background:orange
+}

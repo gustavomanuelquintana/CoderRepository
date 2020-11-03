@@ -1,0 +1,16 @@
+img .imgCart{
+    height: "70px";
+    width: "70px";
+    borderBottom:"5px solid orange";
+}{
+        height: "70px";
+        width: "70px";
+        border-Bottom:"5px solid lightgrey";
+}
+
+.imgCart:hover{
+    height: "70px";
+    width: "70px";
+    border-Bottom:"5px solid orange";
+    cursor:pointer;
+}

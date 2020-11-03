@@ -1,0 +1,10 @@
+.RowItems {
+    border:1px solid rgb(222, 222, 222);
+    border-radius:10px;
+}
+img{
+    height:200px;
+    cursor:pointer;
+}
+
+

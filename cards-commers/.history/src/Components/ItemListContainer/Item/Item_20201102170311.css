@@ -1,0 +1,12 @@
+.RowItems {
+    border:1px solid orange;
+    justify-content: center;
+}
+img{
+    height:150px;
+}
+
+.colDivItem{
+    border:1px solid orange;
+}
+

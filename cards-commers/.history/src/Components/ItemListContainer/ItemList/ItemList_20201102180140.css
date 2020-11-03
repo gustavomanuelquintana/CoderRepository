@@ -1,0 +1,23 @@
+.ListItemContainer{
+    text-align:center;
+    height:auto;
+    margin:auto;
+    padding:40px;
+}
+.info{
+    border-radius:5px;
+}
+
+p{
+    line-height: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .ListItemContainer{
+        text-align:center;
+        margin:0.25em auto;
+        justify-content: center;
+        background:Red;
+    }
+  }

@@ -1,0 +1,47 @@
+.NavBar{
+  border-bottom:4px solid orange;
+  background: url('../../Images/fondo-section.png');
+  position: sticky;
+}
+
+.Logo-navBar {
+  max-height: 8em;
+  height:80px;
+  max-width: 80px;
+  border-radius:8px;
+}
+.navLinks{
+  color:white;
+  border:1px solid orange;
+  border-radius:5px;
+  margin-right: 5px;;
+}
+.dropdown{
+  background: orange;
+  border-radius:5px;
+  color:white;
+  display:block;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight:bold;
+  transition: 0.5s all ease-in;
+  position:fixed;
+}
+.dropdown:hover{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight:bold;
+  border:1px solid orange;
+  background: white;
+  transition: 1s all ease-out;
+}
+.countCartWidget{
+  background-color:orange;
+  height:40px;
+}
+@media screen and (max-width: 768px) {
+  .NavBar{
+    border-bottom:4px solid orange;
+    background: white;
+    position: sticky;
+    text-align:center;
+  }
+}

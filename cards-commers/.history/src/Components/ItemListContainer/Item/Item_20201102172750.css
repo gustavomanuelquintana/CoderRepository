@@ -1,0 +1,42 @@
+.RowItems {
+    border:1px solid rgb(222, 222, 222);
+    border-radius:10px;
+    cursor:pointer;
+}
+.RowItems:hover {
+    border:3px solid hsl(306, 70%, 54%);;
+    border-radius:15px;
+    transition: 2s all ease-out;
+}
+img{
+    height:200px;
+    cursor:pointer;
+}
+
+p .details{
+    font-weight: bold;
+}
+
+.detailDeport{
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.detailMarca{
+    font-family: 'Titillium Web', sans-serif;
+}
+.precio{
+    line-height: 5px;
+}
+
+.sku{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.4em;
+}
+
+.cost{
+    color: #229acd;
+    font-size:0.6em;
+}
+
+

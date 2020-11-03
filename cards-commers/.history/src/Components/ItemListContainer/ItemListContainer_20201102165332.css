@@ -1,0 +1,7 @@
+.ItemListContainer{
+    width:100%;
+    text-align:center;
+    max-height:100vh;
+    margin: 0.25 auto;
+    padding: 35px;
+}

@@ -1,0 +1,14 @@
+.ListItemContainer{
+    text-align:center;
+    height:auto;
+    margin:auto;
+    padding:40px;
+}
+.info{
+    background:lightgrey;
+    border-radius:5px;
+}
+
+p{
+    line-height: 15px;
+}

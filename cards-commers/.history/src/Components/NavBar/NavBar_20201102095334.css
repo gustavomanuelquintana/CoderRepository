@@ -1,0 +1,26 @@
+.NavBar{
+  border-bottom:1px solid lightgrey;
+}
+
+.Logo-navBar {
+  max-height: 8em;
+  height:100px;
+  max-width: 100px;
+}
+.dropdown{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight:bold;
+  background: rgb(221, 88, 168)2, 249, 244);
+}
+.Links-navBar ul li {
+  display: inline-block;
+  margin-right: 35px;
+  margin: 0 70px 0 -40px;
+}
+.Links-navBar ul li a {
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-decoration: none;
+}
