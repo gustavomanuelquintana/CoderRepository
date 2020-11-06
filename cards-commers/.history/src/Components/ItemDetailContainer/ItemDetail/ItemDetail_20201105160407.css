@@ -1,0 +1,100 @@
+.ItemDetail{
+    margin:1em auto;
+    border-radius:20px;
+    text-align:left;
+}
+.containerSectionDetail{
+    background: white;
+    max-height:200px;
+    height: 180px;
+    margin:3em auto;
+}
+.imgDetail img{
+    margin:-50px;
+    height:350px;
+    cursor:default;
+}
+
+.infoDetail{
+    line-height: 25px;
+}
+.infoDetail .infoMainDetail {
+    color:#229acd;
+    font-size: 1.5em;;
+    border:none;
+    font-weight: normal;
+}
+.infoDetail .details{
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 25px;
+}
+
+.precioDetail h3{
+    color: #dc3545;
+    line-height:23px;
+}
+.infoDetail p span{
+    font-weight: bold;
+    color: #dc3545;
+    border-bottom:1px solid red;
+    font-size: 1.1em;
+     font-family: 'Titillium Web', sans-serif;
+}
+
+.skuDetail{
+    color:grey;
+    font-size:0.5em;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.costDetail{
+    background: #229acd;
+    border:1px solid white;
+    color:white;
+    border-radius:5px;
+    font-size: 1em;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.cuotasDetail{
+    background: hsl(306, 70%, 54%);
+    color:white;
+    font-family: 'Titillium Web', sans-serif;
+    border-radius:3px;
+    margin-top:12px;
+    width:50%;
+}
+.cuotas span{
+    background: hsl(274, 70%, 54%);
+    border:2px solid white;
+    color:white;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:bold;
+    border-radius:3px;
+    margin-top:10px;
+    width:50%;
+}
+
+.fontDetail{
+    line-height:18px;
+    text-align: left;
+}
+.shipping{
+    border:1px solid lightgrey;
+    padding: 5px;
+}
+.shipping .shipping-p{
+    margin:0.25em auto;
+    font-family: 'Titillium Web', sans-serif;
+    color:blue;
+}
+.shipping .shipping-p svg{
+    color:blue;
+    margin-right:15px;
+    font-size: 1.2em;
+    color:orange;
+}
+
+.counter{
+    margin:5em auto;
+}
