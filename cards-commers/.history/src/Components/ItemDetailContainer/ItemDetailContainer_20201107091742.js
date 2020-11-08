@@ -211,7 +211,7 @@ const getDetailInfo = (id) => {
                   detail4: "Material: 100% Algodón, Industria Argentina",
                 },
             ]
-            res(products.find(i => i.id === id));
+            res(products).find( (id)=> products.id );;
         },2000);
     });
 }

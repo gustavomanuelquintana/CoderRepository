@@ -7,6 +7,8 @@ import './ItemDetail.css';
 
 
 function ItemDetail(item){
+  console.log(item)
+  
     let stock= 14;
     const handleAdd = (counter) => {
       return ({stock}) => {
@@ -22,30 +24,30 @@ function ItemDetail(item){
  return ( 
    
         <Container>
-    <Row key={item.item.id} className="ItemDetail">
+    <Row key={id} className="ItemDetail">
       <Col xs="6" sm="4">
           <div className="containerSectionDetail">
               <div className="imgDetail">
-                  <img src={item.item.image}/>
+                  <img src={image}/>
               </div>
           </div>
       </Col>
       <Col xs="6" sm="4">
       <div className="containerSectionDetail">
               <div className="infoDetail">
-                    <p className="details"> <span className="infoMainDetail"> {item.item.productName}  {item.item.color}</span> </p>
-                    <p className="details"> <span>Marca:</span> {item.item.marca}</p>
-                    <p className="details"> <span>Género:</span> {item.item.genero}</p>
-                    <p className="details"> <span>Estilo:</span> {item.item.style}</p>
-                    <p className="details"> <span>Calidad / Talle:</span> {item.item.calidad} - {item.item.talle}</p>
+                    <p className="details"> <span className="infoMainDetail"> {productName}  {color}</span> </p>
+                    <p className="details"> <span>Marca:</span> {marca}</p>
+                    <p className="details"> <span>Género:</span> {genero}</p>
+                    <p className="details"> <span>Estilo:</span> {style}</p>
+                    <p className="details"> <span>Calidad / Talle:</span> {calidad} - {talle}</p>
               </div>
           </div>
       </Col>
       <Col sm="4">
       <div className="containerSectionDetail">
-      <h3><span className="skuDetail">SKU:{item.item.sku}</span></h3>
+      <h3><span className="skuDetail">SKU:{sku}</span></h3>
       <div className="precioDetail">
-                    <h3><span className="costDetail">{item.item.precio}</span></h3>
+                    <h3><span className="costDetail">{precio}</span></h3>
                     <div className="cuotasDetail">
                     <h6>12 Cuotas <span className="cuotasDetail">Sin interés</span></h6>
                     </div>
@@ -60,10 +62,10 @@ function ItemDetail(item){
       <Row>
       <Col sm="4">
         <div class="detail-section">
-          <p class="fontDetail">{item.item.detail1}</p>
-          <p class="fontDetail">{item.item.detail2}</p>
-          <p class="fontDetail">{item.item.detail3}</p>
-          <p class="fontDetail">{item.item.detail4}</p>
+          <p class="fontDetail">{detail1}</p>
+          <p class="fontDetail">{detail2}</p>
+          <p class="fontDetail">{detail3}</p>
+          <p class="fontDetail">{detail4}</p>
         </div>
         </Col>
         <Col sm="4">

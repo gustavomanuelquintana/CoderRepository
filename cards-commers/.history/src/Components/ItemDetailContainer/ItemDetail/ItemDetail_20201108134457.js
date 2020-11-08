@@ -7,16 +7,10 @@ import './ItemDetail.css';
 
 
 function ItemDetail(item){
-    let stock= 14;
-    const handleAdd = (counter) => {
-      return ({stock}) => {
-        if (stock <=0){
-          alert('No hay stock')
-        }else {
-          alert(`Se van agregar ${counter} articulos`)
-        }
+    const handleAdd = (item) => {
+       console.log(item.color);
       }
-    }
+    
     
 
  return ( 
@@ -51,7 +45,7 @@ function ItemDetail(item){
                     </div>
               </div>
               <div className="counter">
-              <ItemCount onAdd={handleAdd}  stock={stock} initial={2} /> 
+              <ItemCount onAdd={handleAdd}  initial={2} /> 
               </div>
           </div>
           

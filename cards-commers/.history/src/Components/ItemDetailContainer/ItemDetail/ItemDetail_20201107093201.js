@@ -33,7 +33,7 @@ function ItemDetail(item){
       <Col xs="6" sm="4">
       <div className="containerSectionDetail">
               <div className="infoDetail">
-                    <p className="details"> <span className="infoMainDetail"> {item.item.productName}  {item.item.color}</span> </p>
+                    <p className="details"> <span className="infoMainDetail"> {item.item.productName}  {color}</span> </p>
                     <p className="details"> <span>Marca:</span> {item.item.marca}</p>
                     <p className="details"> <span>Género:</span> {item.item.genero}</p>
                     <p className="details"> <span>Estilo:</span> {item.item.style}</p>

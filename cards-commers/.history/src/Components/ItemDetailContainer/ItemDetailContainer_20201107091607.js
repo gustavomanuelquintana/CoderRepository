@@ -211,7 +211,7 @@ const getDetailInfo = (id) => {
                   detail4: "Material: 100% Algodón, Industria Argentina",
                 },
             ]
-            res(products.find(i => i.id === id));
+            res(products).find;
         },2000);
     });
 }
@@ -221,6 +221,7 @@ function ItemDetailContainer({ tituloDetail }) {
   const [itemDetail, setItemDetail] = useState(null);
   const [loading, setLoading] = useState(null);
   const { id } = useParams();
+  let idItems;
 
   // Use effect
   useEffect(() => {
