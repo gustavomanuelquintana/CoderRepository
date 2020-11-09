@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,16 +7,13 @@ import './ItemDetail.css';
 
 
 function ItemDetail(item){
-          //Estados ItemDetail para
-          let [compra, setCompra] = useState( {isValid: false, id:null, cantidad:0, nombre:'', precio:0} )
-
-    let availableProducts= 14;
-    const handleAdd = (counter) => {
+    let stock= 14;
+    const handleAdd = (counter,item) => {
       return ({stock}) => {
         if (stock <=0){
           alert('No hay stock')
         }else {
-          alert(`Se van agregar ${counter} articulos`)
+          console.log(item);
         }
       }
     }
@@ -54,7 +51,7 @@ function ItemDetail(item){
                     </div>
               </div>
               <div className="counter">
-              <ItemCount onAdd={handleAdd} item={item}  availableProducts={availableProducts} initial={1} /> 
+              <ItemCount onAdd={handleAdd} item={item}  stock={stock} initial={2} /> 
               </div>
           </div>
           

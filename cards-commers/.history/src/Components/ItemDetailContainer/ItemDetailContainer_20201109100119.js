@@ -226,11 +226,12 @@ function ItemDetailContainer({ tituloDetail }) {
   useEffect(() => {
     setLoading(true);
     getDetailInfo(id).then((res) => {
+      console.log(res);
       setLoading(false);
       setItemDetail(res);
     });
   }, []); // End useEffect
-
+  console.log("itemDetail:" + itemDetail);
 
   return (
     <>
@@ -262,7 +263,7 @@ function ItemDetailContainer({ tituloDetail }) {
             <h2>{tituloDetail}</h2>
           </Col>
         </Row>
-        <Row>{itemDetail && <ItemDetail key={itemDetail.id} item={itemDetail} />}</Row>
+        <Row>{itemDetail && <ItemDetail item={itemDetail} />}</Row>
       </div>
     </>
   );

@@ -28,6 +28,21 @@ import AgregarCount from './AgregarCount/AgregarCount';
     }
     export default function ItemCount({onAdd,item,availableProducts,initial}) {
         const [counter, counterState] = useState(initial);
+        const [itemcart, setItemcart] = useState([]);
+
+
+        const handleAddProducts = item =>{
+            let found = false;
+            const updateCart = item.map(cartItem => {
+                if (cartItem.name === item.name) {
+                    found = true;
+                    cartItem.id = counter;
+                    return carItem;
+                }else {
+                    return cartItem;
+                }
+            });
+        }
 
     const onClickButton = (amount) => {
         return () => {
@@ -48,7 +63,7 @@ import AgregarCount from './AgregarCount/AgregarCount';
              <ButtonsCount suma={true} onClick={onClickButton}  {...props}/>
         </div>
 
-        <div  className="box-add" style={boxAdd}> <AgregarCount onAdd={onAdd} {...{counter}}/> </div>
+        <div  className="box-add" style={boxAdd}> <AgregarCount onAdd= {onAdd} {...{counter}}/> </div>
         </div>
         );
 }

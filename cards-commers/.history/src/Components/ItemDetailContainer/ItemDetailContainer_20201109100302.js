@@ -229,8 +229,9 @@ function ItemDetailContainer({ tituloDetail }) {
       setLoading(false);
       setItemDetail(res);
     });
+    console.log("res:" res);
   }, []); // End useEffect
-
+  console.log("itemDetail:" + itemDetail);
 
   return (
     <>
@@ -262,7 +263,7 @@ function ItemDetailContainer({ tituloDetail }) {
             <h2>{tituloDetail}</h2>
           </Col>
         </Row>
-        <Row>{itemDetail && <ItemDetail key={itemDetail.id} item={itemDetail} />}</Row>
+        <Row>{itemDetail && <ItemDetail item={itemDetail} />}</Row>
       </div>
     </>
   );

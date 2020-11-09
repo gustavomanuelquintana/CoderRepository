@@ -48,7 +48,7 @@ import AgregarCount from './AgregarCount/AgregarCount';
              <ButtonsCount suma={true} onClick={onClickButton}  {...props}/>
         </div>
 
-        <div  className="box-add" style={boxAdd}> <AgregarCount onAdd={onAdd} {...{counter}}/> </div>
+        <div  className="box-add" style={boxAdd}> <AgregarCount onAdd= {onAdd} {...{counter}}/> </div>
         </div>
         );
 }

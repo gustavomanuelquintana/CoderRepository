@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,10 +7,7 @@ import './ItemDetail.css';
 
 
 function ItemDetail(item){
-          //Estados ItemDetail para
-          let [compra, setCompra] = useState( {isValid: false, id:null, cantidad:0, nombre:'', precio:0} )
-
-    let availableProducts= 14;
+    let stock= 14;
     const handleAdd = (counter) => {
       return ({stock}) => {
         if (stock <=0){

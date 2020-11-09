@@ -26,13 +26,13 @@ import AgregarCount from './AgregarCount/AgregarCount';
         fontSize: "1em",
         color: "red",
     }
-    export default function ItemCount({onAdd,item,availableProducts,initial}) {
-        const [counter, counterState] = useState(initial);
+    export default function ItemCount({item,onAdd,stock,initial}) {
+        let [counter, counterState] = useState(initial);
 
     const onClickButton = (amount) => {
         return () => {
             let total = (amount < 0) ? 0 : amount;
-            let limiter = (total > availableProducts) ? availableProducts: total;
+            let limiter = (total > stock) ? stock: total;
             counterState(limiter);
 
         }
@@ -48,7 +48,7 @@ import AgregarCount from './AgregarCount/AgregarCount';
              <ButtonsCount suma={true} onClick={onClickButton}  {...props}/>
         </div>
 
-        <div  className="box-add" style={boxAdd}> <AgregarCount onAdd={onAdd} {...{counter}}/> </div>
+        <div  className="box-add" style={boxAdd}> <AgregarCount onAdd= {(item).map( (p) => {console.log(p)})} {...{counter}}/> </div>
         </div>
         );
 }

@@ -4,6 +4,9 @@ import ViewCount from './ViewCount/ViewCount';
 import AgregarCount from './AgregarCount/AgregarCount';
 
 
+
+
+
     const styleContain={
         display:"flex",
         margin: "-10px auto",
@@ -26,8 +29,20 @@ import AgregarCount from './AgregarCount/AgregarCount';
         fontSize: "1em",
         color: "red",
     }
-    export default function ItemCount({onAdd,item,availableProducts,initial}) {
+    export default function ItemCount({onAdd,availableProducts,initial}) {
         const [counter, counterState] = useState(initial);
+
+        let availableProducts= 14;
+        const handleAdd = (counter) => {
+        return ({availableProducts}) => {
+            if (availableProducts <=0){
+            alert('No hay stock')
+            }else {
+            alert(`Se van agregar ${counter} articulos`)
+            }
+        }
+        }
+
 
     const onClickButton = (amount) => {
         return () => {
@@ -48,7 +63,7 @@ import AgregarCount from './AgregarCount/AgregarCount';
              <ButtonsCount suma={true} onClick={onClickButton}  {...props}/>
         </div>
 
-        <div  className="box-add" style={boxAdd}> <AgregarCount onAdd={onAdd} {...{counter}}/> </div>
+        <div  className="box-add" style={boxAdd}> <AgregarCount onAdd= {onAdd} {...{counter}}/> </div>
         </div>
         );
 }

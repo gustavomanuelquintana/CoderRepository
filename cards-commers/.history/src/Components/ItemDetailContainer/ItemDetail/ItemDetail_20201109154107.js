@@ -54,7 +54,7 @@ function ItemDetail(item){
                     </div>
               </div>
               <div className="counter">
-              <ItemCount onAdd={handleAdd} item={item}  availableProducts={availableProducts} initial={1} /> 
+              <ItemCount onAdd={compra} item={item}  availableProducts={availableProducts} initial={1} /> 
               </div>
           </div>
           
