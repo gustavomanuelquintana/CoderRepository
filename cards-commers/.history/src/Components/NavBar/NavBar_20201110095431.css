@@ -1,0 +1,11 @@
+
+
+
+@media screen and (max-width: 768px) {
+  .NavBar{
+    border-bottom:4px solid orange;
+    background: white;
+    position: sticky;
+    text-align:center;
+  }
+}

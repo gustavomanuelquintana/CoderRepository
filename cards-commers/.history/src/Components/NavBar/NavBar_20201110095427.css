@@ -1,0 +1,19 @@
+
+
+.Logo-navBar {
+  max-height: 8em;
+  height:80px;
+  max-width: 80px;
+  border-radius:8px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .NavBar{
+    border-bottom:4px solid orange;
+    background: white;
+    position: sticky;
+    text-align:center;
+  }
+}
