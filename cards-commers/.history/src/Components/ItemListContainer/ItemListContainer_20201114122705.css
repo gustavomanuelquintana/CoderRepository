@@ -1,0 +1,19 @@
+.ItemListContainer{
+    margin: -35px;
+    width:100%;
+    text-align:center;
+    max-height:100vh;
+    margin: 0.25 auto;
+    padding: 35px;
+}
+.rowItemListContainer{
+    justify-content:center;
+    
+}
+.ItemListContainer h2{
+    justify-content:center;
+    text-align:center;
+    font-family: "monospace";
+    font-weight:bold;
+    font-style: italic;
+}
