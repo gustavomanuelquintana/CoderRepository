@@ -1,4 +1,5 @@
-import React, {useState,useContext} from 'react';
+import React, {useState,useReducer, useContext} from 'react';
+import {CartReducer, sumItems} from './CartReducer';
 
 export const CartContext = React.createContext([]);
 
@@ -6,10 +7,13 @@ export const useCartContext = () => useContext(CartContext);
 
 
 export const CartProvider = ({ children, defaultCart }) => {
+    //Estado
  const [cart, setCart] = useState(defaultCart);
+ const [state, dispatch] = useReducer(CartReducer, initialState);
 
  function onAdd(item){
    const storage = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
+
     
     const array = Object.values(item);
     setCart(array);
