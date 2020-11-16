@@ -12,9 +12,9 @@ export const CartProvider = ({ children, defaultCart }) => {
 
 function onAdd(item){
  
-        let index = cart.findIndex(el => el.item.id == item.item.id);
+        let index = cart.find(item => item.id === item.item.id);
 
-        if(index == -1){
+        if(index === item.item.id){
             setCart( [...cart, item]);
         } else {
             console.log("repetido");
