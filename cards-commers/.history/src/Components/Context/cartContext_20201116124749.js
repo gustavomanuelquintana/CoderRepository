@@ -15,7 +15,7 @@ function onAdd(item){
         let index = cart.findIndex(el => el.id == item.id);
 
         if(index == -1){
-            setCart( [...cart, item]);
+            return [...cart, item];
         } else {
             console.log("repetido");
         }

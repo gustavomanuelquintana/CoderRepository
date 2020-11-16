@@ -9,27 +9,12 @@ export const CartProvider = ({ children, defaultCart }) => {
  const [cart, setCart] = useState(defaultCart);
 
  
+const onAdd = (item) => setCart((currentCart) => [...currentCart, item]);
 
-function onAdd(item){
- 
-        let index = cart.findIndex(el => el.id == item.id);
-
-        if(index == -1){
-            setCart( [...cart, item]);
-        } else {
-            console.log("repetido");
-        }
-        
-
-}
-
-console.log(cart);
+const amountOfItems = (id) => cart.filter((item) => item.id === id).length;
 
 
-//const amountOfItems = (id) => cart.filter((item) => item.id === id).length;
-
-
-
+console.log(amountOfItems);
 
 const onRemove = (item) => {
     setCart((currentCart) => {

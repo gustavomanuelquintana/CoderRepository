@@ -9,29 +9,11 @@ export const CartProvider = ({ children, defaultCart }) => {
  const [cart, setCart] = useState(defaultCart);
 
  
+const onAdd = (item) => setCart((currentCart) => [...currentCart, item]);
 
-function onAdd(item){
- 
-        let index = cart.findIndex(el => el.id == item.id);
+console.log("probando a ver que devuelve CART: " + Object.values(cart));
 
-        if(index == -1){
-            setCart( [...cart, item]);
-        } else {
-            console.log("repetido");
-        }
-        
-
-}
-
-console.log(cart);
-
-
-//const amountOfItems = (id) => cart.filter((item) => item.id === id).length;
-
-
-
-
-const onRemove = (item) => {
+const removeFromCart = (item) => {
     setCart((currentCart) => {
       const indexOfItemToRemove = currentCart.findIndex((cartItem) => cartItem.id === item.id);
 
@@ -45,14 +27,14 @@ const onRemove = (item) => {
       ];
     });
   };
-
+  
  function clear(item){
      console.log("Borraremos el item completo")
  }
 
 
 
- return <CartContext.Provider value = {{cart,cart, onAdd, onRemove, clear}}>
+    return <CartContext.Provider value = {{cart,cart, onAdd, onRemove, clear}}>
         {children}
     </CartContext.Provider>
 }

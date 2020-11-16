@@ -24,13 +24,13 @@ function ItemDetail(item){
           alert('No hay stock')
         }else {
           setCompra({isValid: true,cantidad:counter, item:itemcart.item})
+         handleBuy();
         }
       }
     }
       //Function button Buy
     const handleBuy = () => {
-      onAdd(compra);
-     //onAdd(compra);
+     onAdd(compra);
     }
 
 

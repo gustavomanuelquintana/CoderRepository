@@ -9,19 +9,7 @@ export const CartProvider = ({ children, defaultCart }) => {
  const [cart, setCart] = useState(defaultCart);
 
  
-
-function onAdd(item){
- 
-        let index = cart.findIndex(el => el.id == item.id);
-
-        if(index == -1){
-            setCart( [...cart, item]);
-        } else {
-            console.log("repetido");
-        }
-        
-
-}
+const onAdd = (item) => setCart((currentCart) => [...currentCart, item]);
 
 console.log(cart);
 

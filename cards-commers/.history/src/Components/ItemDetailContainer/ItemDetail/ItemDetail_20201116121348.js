@@ -29,7 +29,7 @@ function ItemDetail(item){
     }
       //Function button Buy
     const handleBuy = () => {
-      onAdd(compra);
+      console.log(compra);
      //onAdd(compra);
     }
 
