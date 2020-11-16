@@ -51,7 +51,7 @@ const onRemove = (item) => {
 
 
 
- return <CartContext.Provider value = {{cart, onAdd, onRemove, clear}}>
+ return <CartContext.Provider value = {{cart,cart, onAdd, onRemove, clear}}>
         {children}
     </CartContext.Provider>
 }

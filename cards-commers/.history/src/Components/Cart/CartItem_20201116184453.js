@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Container from 'react-bootstrap/Container';
-import Cartdetail from './cart';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {Link} from 'react-router-dom';
@@ -42,15 +41,7 @@ const Cart = ({titleCart}) => {
     <h2>{titleCart}</h2>
             </Col>
           </Row>
-    <Row>
-      <div className="container">
-        <div className="card card-body border-0">
-          {
-            cart.map(product => <Cartdetail key={product.id} product={product}/>)
-          }
-        </div>
-      </div>
-    </Row>
+          <Row><h3>Aquí ira nuestro section de CART</h3></Row>
         </div>
       </>
     )

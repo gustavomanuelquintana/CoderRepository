@@ -46,7 +46,7 @@ const Cart = ({titleCart}) => {
       <div className="container">
         <div className="card card-body border-0">
           {
-            cart.map(product => <Cartdetail key={product.id} product={product}/>)
+            cart
           }
         </div>
       </div>

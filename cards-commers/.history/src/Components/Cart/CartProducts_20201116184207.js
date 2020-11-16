@@ -12,7 +12,7 @@ import CartItem from '../Cart/CartItem';
 const CartProducts = () => {
 
     const { cart } = useContext(CartContext);
-    console.log(cart);
+    console.log("Probando items CART PRODUCTS: " + cart);
 
     return (
         <Container>
