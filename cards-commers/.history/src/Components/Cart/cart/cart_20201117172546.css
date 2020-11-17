@@ -1,0 +1,29 @@
+
+.col-container{
+    display:flex;
+}
+.no-gutters{
+    border:1px solid lightgrey;
+    padding: 10px 50px 0 0;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.no-gutters{
+    align-items:center;
+}
+
+h5{
+    font-family: 'Titillium Web', sans-serif;
+    color: #229acd;
+}
+
+.typeSize{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+.detailItem{
+    margin: 0.50em auto;
+}

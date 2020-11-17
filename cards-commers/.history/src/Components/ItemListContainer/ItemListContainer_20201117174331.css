@@ -1,0 +1,35 @@
+.ItemListContainer{
+
+    width:100%;
+    text-align:center;
+    max-height:100vh;
+    margin: 0.25 auto;
+    padding: 35px;
+}
+.rowItemListContainer{
+    justify-content:center;
+    
+}
+.counterProductsStore{
+    padding: 5px 0 0 0;
+    text-align: left;
+    margin-left: 15px;
+    font-style: italic;
+}
+
+.ItemListContainer h2{
+    justify-content:center;
+    text-align:center;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:bold;
+    font-style: italic;
+}
+
+.form-group{
+    margin-right: 50px;
+}
+input{
+    box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+ border-collapse: collapse;
+ font-family: 'Titillium Web', sans-serif;
+}

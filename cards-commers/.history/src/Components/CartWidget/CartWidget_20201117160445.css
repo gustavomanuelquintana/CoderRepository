@@ -1,0 +1,28 @@
+.imgCart img{
+        height: 70px;
+        width: 70px;
+        border-Bottom:5px solid orange;
+        position:relative;
+}
+
+.imgCart img:hover{
+    height: 70px;
+    width: 70px;
+    border-Bottom:5px solid red;
+    cursor:pointer;
+}
+
+.cartWidgetCount{
+    position:absolute;
+    z-index: 2;
+    border-radius:5px;
+    font-weight: 500;
+    font-size: 1.1em;
+    color:black;
+    margin:-70px 45px;
+    text-align: center;
+    line-height: 20px;
+    background:orange;
+    height:22px;
+    width:22px;
+}

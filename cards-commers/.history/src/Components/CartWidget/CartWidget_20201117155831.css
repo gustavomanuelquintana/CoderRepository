@@ -1,0 +1,18 @@
+.imgCart img{
+        height: 70px;
+        width: 70px;
+        border-Bottom:5px solid orange;
+        margin:-50px auto;
+        position:absolute;
+}
+
+.imgCart img:hover{
+    height: 70px;
+    width: 70px;
+    border-Bottom:5px solid red;
+    cursor:pointer;
+}
+
+.cartWidgetCount{
+    position:relative;
+}
