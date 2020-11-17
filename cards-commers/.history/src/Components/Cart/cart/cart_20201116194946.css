@@ -1,0 +1,22 @@
+.card{
+    border: 1px solid orange;
+    background:white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0;
+    margin: 0.5em auto;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+.card:hover {
+    line-height: 100px;
+    border-radius: 10px;
+    height: 100px;
+    width: 100%;
+    height: auto;
+    background:orange;
+}
+h5{
+    color: blue;
+}

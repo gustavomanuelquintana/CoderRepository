@@ -1,0 +1,23 @@
+.no-gutters{
+    border: 1px solid orange;
+    background:white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0;
+    margin: 0.5em auto;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+
+h5{
+    color: #229acd;
+    margin:0.20em auto;
+}
+p{
+    font-style: italic;
+    font-weight: bold;
+}
+.detailItem{
+    margin: 1.5em auto;
+}

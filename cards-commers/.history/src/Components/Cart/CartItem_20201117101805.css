@@ -1,0 +1,14 @@
+.divTest{
+border:1px solid orange;
+height:auto;
+width:80%;
+margin: 0 50px 50px 50px;
+}
+
+.totalItem{
+    font-style: italic;
+    padding:2px;
+    color:grey;
+    text-align: left;
+    margin: 10px 0 0 10px;
+}

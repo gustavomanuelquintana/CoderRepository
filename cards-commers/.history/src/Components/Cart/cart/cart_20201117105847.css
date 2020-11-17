@@ -1,0 +1,23 @@
+
+.col-container{
+    display:flex;
+}
+.test-div{
+    border:1px solid orange;
+}
+.no-gutters{
+    align-items:center;
+}
+
+h5{
+    color: #229acd;
+}
+p{
+    margin:0.25em auto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+.detailItem{
+    margin: 0.50em auto;
+}
