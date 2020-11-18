@@ -94,7 +94,7 @@ const Cart = () => {
                <div className="col-sm-12">
                  <Row>
                    <Col sm="6"><button className="btn btn-danger">CHECKOUT</button></Col>
-                   <Col sm="6"><button onClick={clearItems} className="btn btn-secondary ml-4">Clear</button></Col>
+                   <Col sm="6"><button onClick={clearItems} className="btn btn-secondary mr-4">Clear</button></Col>
                </Row>
                </div>
              </div>
