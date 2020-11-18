@@ -31,10 +31,7 @@ function ItemListContainer({ titulo }) {
     <Container className="ItemListContainer">
       <Row>
         <Col sm="12">
-          <div class="cabecera">
-          <h2>{titulo}</h2>
-          <img  src={imageHeader}/>
-          </div>
+          <h2>{titulo} {imageHeader}</h2>
         </Col>
       </Row>
       <Row className="counterSearch mt-4">

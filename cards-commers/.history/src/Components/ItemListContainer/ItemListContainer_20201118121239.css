@@ -25,7 +25,7 @@
 .cabecera img{
     width:120px;
     height:100px;
-    border-radius:50px;
+    border-radius:50px 0 50px 50px;
 }
 
 .ItemListContainer h2{

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ItemListContainer.css";
 import ItemList from "./ItemList/ItemList";
-import imageHeader from '../../Images/imageHeader.png';
 import {productoItems} from '../Products/Products';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -31,10 +30,7 @@ function ItemListContainer({ titulo }) {
     <Container className="ItemListContainer">
       <Row>
         <Col sm="12">
-          <div class="cabecera">
           <h2>{titulo}</h2>
-          <img  src={imageHeader}/>
-          </div>
         </Col>
       </Row>
       <Row className="counterSearch mt-4">

@@ -30,12 +30,10 @@ function ItemListContainer({ titulo }) {
   return (
     <Container className="ItemListContainer">
       <Row>
-        <Col sm="12">
-          <div class="cabecera">
+        <Col sm="8">
           <h2>{titulo}</h2>
-          <img  src={imageHeader}/>
-          </div>
         </Col>
+        <Col sm="4"><img src={imageHeader}/></Col>
       </Row>
       <Row className="counterSearch mt-4">
   <Col sm="4"><p className="counterProductsStore">({itemList.length}) Products </p></Col>
