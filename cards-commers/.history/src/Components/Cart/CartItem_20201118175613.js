@@ -6,7 +6,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {Link} from 'react-router-dom';
 import {useCartContext} from '../Context/cartContext';
-import imageHeader from '../../Images/imageHeader.png';
 
 
 
@@ -78,16 +77,14 @@ const Cart = () => {
       <Col sm="4">
         {
             cart.length > 0 &&
-             <div className="col-sm-7 divTest">
-               <div className="col-sm-12 totalItemImg">
-                 <div className="itemGroup">
+             <div className="col-sm-8 divTest">
+               <div className="col-sm-6 totalItem">
                  <h6>Total Items</h6>
-                 </div>
-                 <div className="itemGroup"><p className=" typeSize">{countercart}</p></div>
-                 <div><img src={imageHeader}/></div>
+        <p className=" typeSize">{countercart}</p>
                </div>
-               <div class="col-sm-12 totalItem">
+               <div class="col-sm-6 totalItem">
                  <h6>Total Precio</h6>
+                 <h3>Proabdno</h3>
         <p className=" typeSize">${total}</p>
                </div>
                <hr />

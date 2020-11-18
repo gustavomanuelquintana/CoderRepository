@@ -78,15 +78,15 @@ const Cart = () => {
       <Col sm="4">
         {
             cart.length > 0 &&
-             <div className="col-sm-7 divTest">
-               <div className="col-sm-12 totalItemImg">
-                 <div className="itemGroup">
+             <div className="col-sm-12 divTest">
+               <div className="col-sm-6 totalItem">
                  <h6>Total Items</h6>
-                 </div>
-                 <div className="itemGroup"><p className=" typeSize">{countercart}</p></div>
-                 <div><img src={imageHeader}/></div>
+        <p className=" typeSize">{countercart}</p>
                </div>
-               <div class="col-sm-12 totalItem">
+               <div className="col-sm-4 totalItem">
+               <img src={imageHeader}/>
+               </div>
+               <div class="col-sm-6 totalItem">
                  <h6>Total Precio</h6>
         <p className=" typeSize">${total}</p>
                </div>

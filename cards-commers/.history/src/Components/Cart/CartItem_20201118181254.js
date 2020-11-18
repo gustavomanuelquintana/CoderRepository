@@ -78,7 +78,7 @@ const Cart = () => {
       <Col sm="4">
         {
             cart.length > 0 &&
-             <div className="col-sm-7 divTest">
+             <div className="col-sm-8 divTest">
                <div className="col-sm-12 totalItemImg">
                  <div className="itemGroup">
                  <h6>Total Items</h6>

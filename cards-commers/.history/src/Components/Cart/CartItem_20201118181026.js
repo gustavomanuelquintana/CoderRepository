@@ -78,12 +78,12 @@ const Cart = () => {
       <Col sm="4">
         {
             cart.length > 0 &&
-             <div className="col-sm-7 divTest">
+             <div className="col-sm-8 divTest">
                <div className="col-sm-12 totalItemImg">
-                 <div className="itemGroup">
+                 <div>
                  <h6>Total Items</h6>
                  </div>
-                 <div className="itemGroup"><p className=" typeSize">{countercart}</p></div>
+                 <div><p className=" typeSize">{countercart}</p></div>
                  <div><img src={imageHeader}/></div>
                </div>
                <div class="col-sm-12 totalItem">

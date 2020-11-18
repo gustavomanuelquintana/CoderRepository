@@ -140,7 +140,7 @@ function ItemDetail(item) {
                 : "no hay articulos" && (
                     <button
                       onClick={handleBuy}
-                      class="btn btn-secondary btn-lg btn-block"
+                      class="btn btn-success btn-lg btn-block"
                     >
                       <svg
                         width="1em"
