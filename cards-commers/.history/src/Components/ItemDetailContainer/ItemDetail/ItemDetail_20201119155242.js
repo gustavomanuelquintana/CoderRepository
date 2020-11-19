@@ -33,8 +33,8 @@ function ItemDetail(item) {
       }
     };
   };
-  const handleBuy = () => {
-    onAdd(compra);
+  const handleBuy = (compra) => {
+  
   };
   //Function button Buy
  
@@ -140,7 +140,7 @@ function ItemDetail(item) {
                 ? compra.isValid
                 : "no hay articulos" && (
                     <button
-                      onClick={handleBuy}
+                      onClick={()=>{}}
                       class="btn btn-secondary btn-lg btn-block"
                     >
                       <svg

@@ -11,33 +11,20 @@ import { useCartContext } from "../../../Components/Context/cartContext";
 function ItemDetail(item) {
   //Estados ItemDetail para
   const {onAdd} = useCartContext();
-  let [compra, setCompra] = useState({
-    isValid: false,
-    id: null,
-    cantidad: 0,
-    nombre: "",
-    precio: 0,
-  });
   let [itemcart, setItem] = useState(item);
 
   let stock = 14;
   //Function add to Cart
-
-  const handleAdd = (counter) => {
-    return ({ stock }) => {
-      if (stock <= 0) {
-        alert("No hay stock");
-      } else {
-        const date= { isValid: true, cantidad: counter, item: itemcart.item };
-        setCompra(date);
-      }
-    };
-  };
-  const handleBuy = () => {
+  const handleAdd = (compra) => {
     onAdd(compra);
+    console.log(compra);
   };
   //Function button Buy
+  const handleBuy = () => {
  
+    //onAdd(compra);
+  };
+
   return (
     <Container>
       <Row key={item.item.id} className="ItemDetail">
@@ -136,9 +123,7 @@ function ItemDetail(item) {
         <Col sm="4">
           <div class="detail-section">
             <Link to="/cart">
-              {compra.cantidad <= 0
-                ? compra.isValid
-                : "no hay articulos" && (
+     
                     <button
                       onClick={handleBuy}
                       class="btn btn-secondary btn-lg btn-block"
@@ -158,7 +143,7 @@ function ItemDetail(item) {
                       </svg>
                       Comprar
                     </button>
-                  )}
+         
             </Link>
           </div>
         </Col>

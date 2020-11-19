@@ -20,24 +20,23 @@ function ItemDetail(item) {
   });
   let [itemcart, setItem] = useState(item);
 
-  let stock = 14;
+  let availableProducts = 14;
   //Function add to Cart
-
   const handleAdd = (counter) => {
     return ({ stock }) => {
       if (stock <= 0) {
         alert("No hay stock");
       } else {
-        const date= { isValid: true, cantidad: counter, item: itemcart.item };
-        setCompra(date);
+        setCompra({ isValid: true, cantidad: counter, item: itemcart.item });
       }
     };
   };
+  //Function button Buy
   const handleBuy = () => {
     onAdd(compra);
+    //onAdd(compra);
   };
-  //Function button Buy
- 
+
   return (
     <Container>
       <Row key={item.item.id} className="ItemDetail">
@@ -97,7 +96,7 @@ function ItemDetail(item) {
               <ItemCount
                 onAdd={handleAdd}
                 item={item}
-                stock={stock}
+                availableProducts={availableProducts}
                 initial={1}
               />
             </div>

@@ -64,7 +64,7 @@ const Cartdetail = ({product}) => {
                  </button>
 
                  {
-                     statuscart.cantidad > 1 &&
+                     statuscart.cantidad > 0 &&
                      <button
                     onClick={decreaseItem}
                     className="btn btn-danger btn-sm mb-1">
@@ -72,7 +72,7 @@ const Cartdetail = ({product}) => {
                     </button>
                  }
                   {
-                     statuscart.cantidad === 1 &&
+                     statuscart.cantidad === 0 &&
                      <button
                     onClick={removeItemUnit}
                     className="btn btn-danger btn-sm mb-1">

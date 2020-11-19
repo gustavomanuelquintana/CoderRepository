@@ -33,7 +33,7 @@ function ItemDetail(item) {
       }
     };
   };
-  const handleBuy = () => {
+  const handleBuy = (compra) => {
     onAdd(compra);
   };
   //Function button Buy

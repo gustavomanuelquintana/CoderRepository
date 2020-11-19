@@ -22,6 +22,9 @@ function ItemDetail(item) {
 
   let stock = 14;
   //Function add to Cart
+  const handleBuy = () => {
+    onAdd(compra);
+  };
 
   const handleAdd = (counter) => {
     return ({ stock }) => {
@@ -30,11 +33,10 @@ function ItemDetail(item) {
       } else {
         const date= { isValid: true, cantidad: counter, item: itemcart.item };
         setCompra(date);
+        handleBuy();
+
       }
     };
-  };
-  const handleBuy = () => {
-    onAdd(compra);
   };
   //Function button Buy
  
@@ -140,7 +142,7 @@ function ItemDetail(item) {
                 ? compra.isValid
                 : "no hay articulos" && (
                     <button
-                      onClick={handleBuy}
+                      onClick={()=>{}}
                       class="btn btn-secondary btn-lg btn-block"
                     >
                       <svg

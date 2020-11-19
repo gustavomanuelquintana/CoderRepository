@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
 const agregarcount = {
     border:"none",
@@ -9,13 +8,12 @@ const agregarcount = {
     color:"white",
     fontSize:"1em",
 }
-export default function AgregarCount({onAdd, counter}){
+export default function AgregarCount({onAdd,stock, counter}){
 
 
     return(
         <div>
-            <button style={agregarcount} onClick={onAdd(counter)}>Agregar al Carrito</button> 
+            <button style={agregarcount} onClick={onAdd(counter,stock)}>Agregar al Carrito</button> 
         </div>
-
     )
 }

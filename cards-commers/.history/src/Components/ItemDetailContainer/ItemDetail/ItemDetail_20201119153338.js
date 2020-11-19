@@ -22,7 +22,6 @@ function ItemDetail(item) {
 
   let stock = 14;
   //Function add to Cart
-
   const handleAdd = (counter) => {
     return ({ stock }) => {
       if (stock <= 0) {
@@ -30,14 +29,16 @@ function ItemDetail(item) {
       } else {
         const date= { isValid: true, cantidad: counter, item: itemcart.item };
         setCompra(date);
+        return  onAdd(compra);
       }
     };
   };
+  //Function button Buy
   const handleBuy = () => {
     onAdd(compra);
+    //onAdd(compra);
   };
-  //Function button Buy
- 
+
   return (
     <Container>
       <Row key={item.item.id} className="ItemDetail">

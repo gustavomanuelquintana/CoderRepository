@@ -16,6 +16,5 @@ export default function AgregarCount({onAdd, counter}){
         <div>
             <button style={agregarcount} onClick={onAdd(counter)}>Agregar al Carrito</button> 
         </div>
-
     )
 }
