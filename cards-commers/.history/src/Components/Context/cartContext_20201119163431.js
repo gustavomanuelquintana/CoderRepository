@@ -59,7 +59,7 @@ console.log("DEC", JSON.stringify(cart), Array.isArray(cart));
 }
 
 function removeItem(itemId){
-    setCart(cart.filter( item => itemId.item.id != item.item.id));
+    setCart(cart.filter( item => itemId.item.id !== item.item.id));
 }
 
 
