@@ -10,15 +10,11 @@ export const CartProvider = ({ children, defaultCart }) => {
  const [cart, setCart] = useState(defaultCart);
 
 
- function onAdd(item){
-    let index = cart.findIndex(el => el.item.id === item.item.id);
-
-    if(index === -1){
-        const updateCart = cart.concat({
-            ...item,
-            cantidad: item.cantidad
-        });
-        setCart(updateCart);
+function onAdd(item){
+    let index = cart.findIndex(el => el.item.id == item.item.id);
+    
+    if(index == -1){
+        setCart([...cart,item]);
         console.log("ADD", JSON.stringify(cart), Array.isArray(cart));
         //setCart( [...cart, item]);
     } else {
@@ -31,12 +27,12 @@ export const CartProvider = ({ children, defaultCart }) => {
 
 
 //Function Increase item Cart
-function increase(item){
-    let index = cart.findIndex(el => el.item.id === item.item.id);
+function increase(item,count){
+    let index = cart.findIndex(el => el.id === item.item.id);
     const updateCart = [...cart];
 
 updateCart[index] = {
-  ...updateCart[index],
+  ...updateCart,
   cantidad: updateCart[index].cantidad + 1,
 };
 setCart(updateCart);

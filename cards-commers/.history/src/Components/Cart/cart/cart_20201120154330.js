@@ -12,25 +12,26 @@ const Cartdetail = ({product}) => {
 
       const increaseItem = () => {
         increase(product);
-        console.log(product);
+        console.log(statuscart);
         //onAdd(compra);
       };
 
       const decreaseItem = () => {
         decrease(product);
-        console.log(product);
+        console.log(statuscart);
         //onAdd(compra);
       };
 
       const removeItemUnit = () => {
         removeItem(product);
-        console.log(product);
+        console.log(statuscart);
         //onAdd(compra);
       };
 
 
     //const { increase, decrease, removeProduct } = useContext(CartContext);
     useEffect(()=>{
+        setStatuscart(product);
         console.log("mounted");
         return(()=>{
             console.log("dismounted");

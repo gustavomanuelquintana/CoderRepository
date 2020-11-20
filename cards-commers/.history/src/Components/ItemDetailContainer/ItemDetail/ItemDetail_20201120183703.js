@@ -9,7 +9,7 @@ import "./ItemDetail.css";
 import { useCartContext } from "../../../Components/Context/cartContext";
 
 
-function ItemDetail({item}) {
+function ItemDetail(item) {
   //Estados ItemDetail para
   const {onAdd} = useCartContext();
   let [compra, setCompra] = useState({
@@ -27,7 +27,7 @@ function ItemDetail({item}) {
       if (stock <= 0) {
         alert("No hay stock");
       } else {
-        const date= { isValid: true, cantidad: counter, item: item };
+        const date= { isValid: true, cantidad: counter, item };
         setCompra(date);
         onAdd(date);
       }
@@ -40,11 +40,11 @@ function ItemDetail({item}) {
   return (
     <Container>
 	<Fade bottom cascade>
-      <Row key={item.id} className="ItemDetail">
+      <Row key={item.item.id} className="ItemDetail">
         <Col xs="6" sm="4">
           <div className="containerSectionDetail">
             <div className="imgDetail">
-              <img src={item.image} />
+              <img src={item.item.image} />
             </div>
           </div>
         </Col>
@@ -55,25 +55,25 @@ function ItemDetail({item}) {
                 {" "}
                 <span className="infoMainDetail">
                   {" "}
-                  {item.productName} {item.color}
+                  {item.item.productName} {item.item.color}
                 </span>{" "}
               </p>
               <p className="details">
                 {" "}
-                <span>Marca:</span> {item.marca}
+                <span>Marca:</span> {item.item.marca}
               </p>
               <p className="details">
                 {" "}
-                <span>Género:</span> {item.genero}
+                <span>Género:</span> {item.item.genero}
               </p>
               <p className="details">
                 {" "}
-                <span>Estilo:</span> {item.style}
+                <span>Estilo:</span> {item.item.style}
               </p>
               <p className="details">
                 {" "}
-                <span>Calidad / Talle:</span> {item.calidad} -{" "}
-                {item.talle}
+                <span>Calidad / Talle:</span> {item.item.calidad} -{" "}
+                {item.item.talle}
               </p>
             </div>
           </div>
@@ -81,11 +81,11 @@ function ItemDetail({item}) {
         <Col sm="4">
           <div className="containerSectionDetail">
             <h3>
-              <span className="skuDetail">SKU:{item.sku}</span>
+              <span className="skuDetail">SKU:{item.item.sku}</span>
             </h3>
             <div className="precioDetail">
               <h3>
-                <span className="costDetail">${item.precio} </span>
+                <span className="costDetail">${item.item.precio} </span>
               </h3>
               <div className="cuotasDetail">
                 <h6>
@@ -107,10 +107,10 @@ function ItemDetail({item}) {
       <Row>
         <Col sm="4">
           <div class="detail-section">
-            <p class="fontDetail">{item.detail1}</p>
-            <p class="fontDetail">{item.detail2}</p>
-            <p class="fontDetail">{item.detail3}</p>
-            <p class="fontDetail">{item.detail4}</p>
+            <p class="fontDetail">{item.item.detail1}</p>
+            <p class="fontDetail">{item.item.detail2}</p>
+            <p class="fontDetail">{item.item.detail3}</p>
+            <p class="fontDetail">{item.item.detail4}</p>
           </div>
         </Col>
         <Col sm="4">

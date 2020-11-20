@@ -31,6 +31,7 @@ const Cartdetail = ({product}) => {
 
     //const { increase, decrease, removeProduct } = useContext(CartContext);
     useEffect(()=>{
+        setproduct(product);
         console.log("mounted");
         return(()=>{
             console.log("dismounted");

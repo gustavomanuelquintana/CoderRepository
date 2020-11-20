@@ -16,7 +16,7 @@ const amountPrice = (cart,total,setTotal) => {
   let price = cart.forEach( value =>{totalPrice+= (value.item.precio * value.cantidad)}); 
   setTotal(totalPrice)
 }
-debugger;
+
 const count= (cart,countercart,setCountercart) => {
   let counter = 0;
   let itemCounter = cart.forEach( value => counter += value.cantidad);
@@ -70,7 +70,7 @@ const Cart = () => {
         <Col sm="8">
           {
             cart.length > 0 ?
-            cart.map(product => <Cartdetail key={product.id} product={product} title={"Section Car"}/>)
+            cart.map(product => <Cartdetail key={product.id} product={product.item} title={"Section Car"}/>)
             : <div className="p-3 text-center text-muted">No tienes ningún producto en tu carrito de compras.</div>
           }
           </Col>

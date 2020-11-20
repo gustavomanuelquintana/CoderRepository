@@ -16,14 +16,14 @@ const amountPrice = (cart,total,setTotal) => {
   let price = cart.forEach( value =>{totalPrice+= (value.item.precio * value.cantidad)}); 
   setTotal(totalPrice)
 }
-debugger;
+
 const count= (cart,countercart,setCountercart) => {
   let counter = 0;
   let itemCounter = cart.forEach( value => counter += value.cantidad);
   setCountercart(counter)
 }
 
-const Cart = () => {
+const Cart = ({product}) => {
     const {cart, cartCount, totalItem, clear} = useCartContext();
     const [countercart,setCountercart] = useState(0);
     const [total,setTotal] = useState(0);

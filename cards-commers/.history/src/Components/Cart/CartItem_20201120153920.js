@@ -16,7 +16,7 @@ const amountPrice = (cart,total,setTotal) => {
   let price = cart.forEach( value =>{totalPrice+= (value.item.precio * value.cantidad)}); 
   setTotal(totalPrice)
 }
-debugger;
+
 const count= (cart,countercart,setCountercart) => {
   let counter = 0;
   let itemCounter = cart.forEach( value => counter += value.cantidad);

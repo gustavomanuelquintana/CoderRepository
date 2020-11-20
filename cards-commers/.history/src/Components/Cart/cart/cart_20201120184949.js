@@ -48,7 +48,7 @@ const Cartdetail = ({product}) => {
             </div>
             <div className="col-sm-3 p-2 detailItem">
                 <h5 className="mb-1">{product.item.productName}</h5>
-                <p className="mb-1 typeSize">${product.item.precio} </p>
+                <p className="mb-1 typeSize">${product.precio} </p>
                 
             </div>
             <div className="col-sm-3 p-2 text-center detailItem ">
@@ -63,7 +63,7 @@ const Cartdetail = ({product}) => {
                  </button>
 
                  {
-                     product.cantidad > 0 &&
+                     product.count > 0 &&
                      <button
                     onClick={decreaseItem}
                     className="btn btn-danger btn-sm mb-1 mr-3">
@@ -71,7 +71,7 @@ const Cartdetail = ({product}) => {
                     </button>
                  }
                   {
-                     product.cantidad === 1 &&
+                     product.count === 1 &&
                      <button
                     onClick={removeItemUnit}
                     className="btn btn-danger btn-sm mb-1">

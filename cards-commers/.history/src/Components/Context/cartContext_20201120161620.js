@@ -10,7 +10,7 @@ export const CartProvider = ({ children, defaultCart }) => {
  const [cart, setCart] = useState(defaultCart);
 
 
- function onAdd(item){
+function onAdd(item){
     let index = cart.findIndex(el => el.item.id === item.item.id);
 
     if(index === -1){
@@ -69,7 +69,7 @@ function removeItem(itemId){
 
 
 
- return <CartContext.Provider value = {{cart,increase,decrease,removeItem, onAdd, clear, cartCount : cart.cantidad}}>
+ return <CartContext.Provider value = {{cart,increase,decrease,removeItem, onAdd, clear, cartCount : cart.length}}>
         {children}
     </CartContext.Provider>
 }

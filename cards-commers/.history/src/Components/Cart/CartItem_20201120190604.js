@@ -83,7 +83,7 @@ const Cart = () => {
                  <div className="itemGroup">
                  <h6>Total Items:</h6>
                  </div>
-                 <div className="itemGroup"><p className=" typeSize">{countercart}</p></div>
+                 <div className="itemGroup"><p className=" typeSize">{cartCount}</p></div>
                  <div><img src={imageHeader}/></div>
                </div>
                <div class="col-sm-12 totalItem">

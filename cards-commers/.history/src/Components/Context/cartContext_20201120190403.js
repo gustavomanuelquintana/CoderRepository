@@ -32,11 +32,11 @@ export const CartProvider = ({ children, defaultCart }) => {
 
 //Function Increase item Cart
 function increase(item){
-    let index = cart.findIndex(el => el.item.id === item.item.id);
+    let index = cart.findIndex(el => el.id === item.item.id);
     const updateCart = [...cart];
 
 updateCart[index] = {
-  ...updateCart[index],
+  ...updateCart,
   cantidad: updateCart[index].cantidad + 1,
 };
 setCart(updateCart);

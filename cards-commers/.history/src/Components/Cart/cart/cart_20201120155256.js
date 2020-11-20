@@ -6,7 +6,7 @@ import {PlusCircleIcon, MinusCircleIcon, TrashIcon} from '../../icons/index';
 //import { CartContext } from '../Context/cartContext';
 
 
-const Cartdetail = ({product}) => {
+const Cartdetail = ({product,count}) => {
     const {increase,decrease, removeItem} = useCartContext();
 
 
@@ -53,7 +53,7 @@ const Cartdetail = ({product}) => {
             </div>
             <div className="col-sm-3 p-2 text-center detailItem ">
             <h5 className="mb-1">Cantidad</h5>
-                 <p className="mb-0 typeSize">{product.cantidad}</p>
+                 <p className="mb-0 typeSize">{count}</p>
             </div>
             <div className="col-sm-3  text-right ">
                  <button 
@@ -63,7 +63,7 @@ const Cartdetail = ({product}) => {
                  </button>
 
                  {
-                     product.cantidad > 0 &&
+                     count > 0 &&
                      <button
                     onClick={decreaseItem}
                     className="btn btn-danger btn-sm mb-1 mr-3">
@@ -71,7 +71,7 @@ const Cartdetail = ({product}) => {
                     </button>
                  }
                   {
-                     product.cantidad === 1 &&
+                     count === 1 &&
                      <button
                     onClick={removeItemUnit}
                     className="btn btn-danger btn-sm mb-1">

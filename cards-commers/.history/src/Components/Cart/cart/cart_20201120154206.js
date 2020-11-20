@@ -7,30 +7,33 @@ import {PlusCircleIcon, MinusCircleIcon, TrashIcon} from '../../icons/index';
 
 
 const Cartdetail = ({product}) => {
+
+    const [statuscart, setStatuscart] = useState(product);
     const {increase,decrease, removeItem} = useCartContext();
 
 
       const increaseItem = () => {
         increase(product);
-        console.log(product);
+        console.log(statuscart);
         //onAdd(compra);
       };
 
       const decreaseItem = () => {
         decrease(product);
-        console.log(product);
+        console.log(statuscart);
         //onAdd(compra);
       };
 
       const removeItemUnit = () => {
         removeItem(product);
-        console.log(product);
+        console.log(statuscart);
         //onAdd(compra);
       };
 
 
     //const { increase, decrease, removeProduct } = useContext(CartContext);
     useEffect(()=>{
+        setStatuscart(product);
         console.log("mounted");
         return(()=>{
             console.log("dismounted");
@@ -42,18 +45,18 @@ const Cartdetail = ({product}) => {
         <div className="row col-sm-12 ml-4 no-gutters py-2">
             <div className="col-sm-3 p-2">
                 <img
-                alt={product.item.name}
+                alt={statuscart.item.name}
                 style={{margin: "0 auto", maxHeight: "100px"}} 
-                src={product.item.image} className="img-fluid d-block"/>
+                src={statuscart.item.image} className="img-fluid d-block"/>
             </div>
             <div className="col-sm-3 p-2 detailItem">
-                <h5 className="mb-1">{product.item.productName}</h5>
-                <p className="mb-1 typeSize">${product.item.precio} </p>
+                <h5 className="mb-1">{statuscart.item.productName}</h5>
+                <p className="mb-1 typeSize">${statuscart.item.precio} </p>
                 
             </div>
             <div className="col-sm-3 p-2 text-center detailItem ">
             <h5 className="mb-1">Cantidad</h5>
-                 <p className="mb-0 typeSize">{product.cantidad}</p>
+                 <p className="mb-0 typeSize">{statuscart.cantidad}</p>
             </div>
             <div className="col-sm-3  text-right ">
                  <button 
@@ -63,7 +66,7 @@ const Cartdetail = ({product}) => {
                  </button>
 
                  {
-                     product.cantidad > 0 &&
+                     statuscart.cantidad > 0 &&
                      <button
                     onClick={decreaseItem}
                     className="btn btn-danger btn-sm mb-1 mr-3">
@@ -71,7 +74,7 @@ const Cartdetail = ({product}) => {
                     </button>
                  }
                   {
-                     product.cantidad === 1 &&
+                     statuscart.cantidad === 1 &&
                      <button
                     onClick={removeItemUnit}
                     className="btn btn-danger btn-sm mb-1">
