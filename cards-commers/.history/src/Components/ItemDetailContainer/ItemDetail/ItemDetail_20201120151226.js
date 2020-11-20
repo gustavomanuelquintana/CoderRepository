@@ -29,9 +29,9 @@ function ItemDetail(item) {
       if (stock <= 0) {
         alert("No hay stock");
       } else {
-        const date= { isValid: true, cantidad: counter, item };
+        const date= { isValid: true, cantidad: counter, item: itemcart.item };
         setCompra(date);
-        onAdd(date);
+        onAdd(compra);
       }
     };
   };

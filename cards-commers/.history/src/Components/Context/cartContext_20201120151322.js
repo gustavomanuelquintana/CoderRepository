@@ -12,9 +12,13 @@ export const CartProvider = ({ children, defaultCart }) => {
 
 function onAdd(item){
     let index = cart.findIndex(el => el.item.id == item.item.id);
-    
-    if(index == -1){
-        setCart([...cart,item]);
+
+    if(index === -1){
+        const updateCart = cart.concat({
+            ...item,
+            cantidad: item.cantidad
+        });
+        setCart(updateCart);
         console.log("ADD", JSON.stringify(cart), Array.isArray(cart));
         //setCart( [...cart, item]);
     } else {

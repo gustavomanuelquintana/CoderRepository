@@ -9,7 +9,7 @@ import "./ItemDetail.css";
 import { useCartContext } from "../../../Components/Context/cartContext";
 
 
-function ItemDetail(item) {
+function ItemDetail({item}) {
   //Estados ItemDetail para
   const {onAdd} = useCartContext();
   let [compra, setCompra] = useState({

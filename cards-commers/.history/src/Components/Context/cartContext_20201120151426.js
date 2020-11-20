@@ -12,7 +12,7 @@ export const CartProvider = ({ children, defaultCart }) => {
 
 function onAdd(item){
     let index = cart.findIndex(el => el.item.id == item.item.id);
-    
+
     if(index == -1){
         setCart([...cart,item]);
         console.log("ADD", JSON.stringify(cart), Array.isArray(cart));

@@ -15,6 +15,7 @@ function ItemDetail(item) {
   let [compra, setCompra] = useState({
     isValid: false,
     id: null,
+    itemcart: [],
     cantidad: 0,
     nombre: "",
     precio: 0,
@@ -29,9 +30,7 @@ function ItemDetail(item) {
       if (stock <= 0) {
         alert("No hay stock");
       } else {
-        const date= { isValid: true, cantidad: counter, item };
-        setCompra(date);
-        onAdd(date);
+        onAdd(compra,itemcart,counter);
       }
     };
   };

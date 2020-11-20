@@ -10,11 +10,15 @@ export const CartProvider = ({ children, defaultCart }) => {
  const [cart, setCart] = useState(defaultCart);
 
 
-function onAdd(item){
-    let index = cart.findIndex(el => el.item.id == item.item.id);
-    
-    if(index == -1){
-        setCart([...cart,item]);
+function onAdd(state,item,counter){
+    let index = cart.findIndex(el => el.item.id === item.item.id);
+
+    if(index === -1){
+        const updateCart = state.itemcart.concat({
+            ...item,
+            cantidad: counter
+        });
+        setCart(updateCart);
         console.log("ADD", JSON.stringify(cart), Array.isArray(cart));
         //setCart( [...cart, item]);
     } else {
