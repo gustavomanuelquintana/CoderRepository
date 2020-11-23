@@ -1,0 +1,50 @@
+.containerDetail {
+  width: 100%;
+  max-height: 100vh;
+  margin: 0.25 auto;
+  padding: 35px;
+  text-align: center;
+}
+.cabecera {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.regresar:hover {
+  text-decoration: none;
+}
+ul {
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Titillium Web", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+ul li svg {
+  margin-right: 5px;
+  font-size: 1.4em;
+  color: orange;
+  background: white;
+  border-radius: 0px;
+}
+ul li svg:hover {
+  margin-right: 5px;
+  font-size: 1.4em;
+  color: orange;
+  border-radius: 0px;
+}
+.containerDetail h2 {
+  justify-content: center;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
