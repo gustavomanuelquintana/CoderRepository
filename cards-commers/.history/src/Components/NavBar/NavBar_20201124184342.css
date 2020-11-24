@@ -1,0 +1,45 @@
+
+.Logo-navBar {
+  max-height: 8em;
+  height:70px;
+  max-width: 100px;
+  border-radius:5px;
+}
+.navLinks{
+  color:black;
+  border:1px solid orange;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  border-radius:5px;
+  margin-right: 5px;;
+}
+nav-link{
+  color:black;
+ 
+}
+.dropdown{
+  border:1px solid orange;
+  background: orange;
+  border-radius:5px;
+  color:black;
+  display:block;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight:bold;
+  transition: 0.5s all ease-in;
+  position:fixed;
+}
+
+.dropdown:hover{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight:bold;
+  border:1px solid orange;
+  transition: 1s all ease-out;
+}
+@media screen and (max-width: 768px) {
+  .NavBar{
+    border-bottom:4px solid orange;
+    background: white;
+    position: sticky;
+    text-align:center;
+  }
+}
