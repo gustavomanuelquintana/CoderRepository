@@ -194,19 +194,7 @@ const Cart = () => {
                       </div>
                     </form>
                 </div>
-                <hr />
-               <div className="col-sm-12">
-                 <Row>
-                   <Col sm="12"><button
-                   onClick={createOrder}
-                    className="btn btn-success"
-                    type="submit"
-                  >
-                    CHECKOUT
-                  </button></Col>
-               </Row>
-               </div>
-             </div>
+              </div>
               )}
           </Col>
     </Row>

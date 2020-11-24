@@ -195,7 +195,7 @@ const Cart = () => {
                     </form>
                 </div>
                 <hr />
-               <div className="col-sm-12">
+               <div className="col-sm-5">
                  <Row>
                    <Col sm="12"><button
                    onClick={createOrder}

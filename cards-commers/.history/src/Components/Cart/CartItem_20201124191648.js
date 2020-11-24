@@ -154,8 +154,16 @@ const Cart = () => {
              }
              {order.showCheckout && (
                 <div className=" divTest">
+                <div className="col-sm-12 totalItemImg">
+                  <div className="itemGroup">
+                  <h6>Total Items:</h6>
+                  </div>
+                  <div className="itemGroup"><p className=" typeSize">{countercart}</p></div>
+                  <div><img src={imageHeader}/></div>
+                </div>
                 <div class="col-sm-12 totalItem">
-                  <h6>Finalización Compra</h6>
+                  <h6>Total Precio</h6>
+         <p className=" typeSize">${total}</p>
                 </div>
                 <hr />
                 <div className="col-sm-12">
@@ -194,19 +202,7 @@ const Cart = () => {
                       </div>
                     </form>
                 </div>
-                <hr />
-               <div className="col-sm-12">
-                 <Row>
-                   <Col sm="12"><button
-                   onClick={createOrder}
-                    className="btn btn-success"
-                    type="submit"
-                  >
-                    CHECKOUT
-                  </button></Col>
-               </Row>
-               </div>
-             </div>
+              </div>
               )}
           </Col>
     </Row>

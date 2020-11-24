@@ -125,7 +125,7 @@ const Cart = () => {
         {
             cart.length > 0 &&
              <div className=" divTest">
-               <div className="col-sm-12 totalItemImg">
+               <div className="col-sm-7 ">
                  <div className="itemGroup">
                  <h6>Total Items:</h6>
                  </div>
@@ -153,13 +153,11 @@ const Cart = () => {
              </div>
              }
              {order.showCheckout && (
-                <div className=" divTest">
-                <div class="col-sm-12 totalItem">
-                  <h6>Finalización Compra</h6>
-                </div>
-                <hr />
-                <div className="col-sm-12">
-                <form>
+                <Fade up cascade>
+                  <div className="col-sm-8 divTest">
+               <div class="col-sm-12">
+                 <h6>Total Precio</h6>
+                 <form>
                  <div class="form-group">
                           <label>Email:</label>
                           <input
@@ -193,9 +191,9 @@ const Cart = () => {
                           ></input>
                       </div>
                     </form>
-                </div>
-                <hr />
-               <div className="col-sm-12">
+               </div>
+               <hr />
+               <div className="col-sm-5">
                  <Row>
                    <Col sm="12"><button
                    onClick={createOrder}
@@ -207,6 +205,7 @@ const Cart = () => {
                </Row>
                </div>
              </div>
+                </Fade>
               )}
           </Col>
     </Row>
