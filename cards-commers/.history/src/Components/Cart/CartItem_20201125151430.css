@@ -1,0 +1,40 @@
+.divTest{
+border:1px solid lightgrey;
+border-radius:10px;
+height:auto;
+width:80%;
+margin: 0 50px 50px 50px;
+}
+.typeSize{
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: rgba(0,0,0,.5);
+    margin-top:15px;
+    color: crimson;
+    font-size: 1.5em;
+    font-family: 'Titillium Web', sans-serif;
+}
+.totalItemImg{
+    display: flex;
+    justify-content: center;
+}
+.itemGroup{
+    margin-top:auto;
+}
+.totalItemImg img {
+    width:80px;
+    height:80px;
+    border-radius:50px;
+}
+
+.totalItem{
+    font-style: italic;
+    padding:2px;
+    color:black;
+    font-weight: bold;
+    font-size: 1.4em;
+    border:1px solid orange;
+    text-align: center;
+    margin: 10px 0 0 10px;
+}
+
