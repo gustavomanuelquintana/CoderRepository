@@ -11,7 +11,7 @@ import {
 import {
   ButtonPrimary,
   ButtonDanger,
-  ButtonDark
+  ButtonDark,
 } from "../../ComponentsGlobal/index";
 
 const Cartdetail = ({ product }) => {

@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 import Col from "react-bootstrap/Col";
 import ItemCount from "../../ItemCount/ItemCount";
 import { BuyIcon, TrackIcon } from "../../icons/index";
-import { ButtonSuccess } from "../../ComponentsGlobal/index";
+import { ButtonSuccess } from "../../ButtonGlobal/index";
 import "./ItemDetail.css";
 import { useCartContext } from "../../../Components/Context/cartContext";
 

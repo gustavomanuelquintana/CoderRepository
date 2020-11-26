@@ -6,7 +6,7 @@ import "../Cart/CartItem.css";
 import Cartdetail from "./cart/cart";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import {ButtonPrimary,ButtonDark,ButtonSuccess,Input} from '../ComponentsGlobal/index';
+import {ButtonPrimary,ButtonDark} from '../../Components/ButtonGlobal/index';
 import { Link } from "react-router-dom";
 import { useCartContext } from "../Context/cartContext";
 import { ReturnIcon, TrashIcon } from "../icons/index";
@@ -151,16 +151,41 @@ const Cart = () => {
                   <form>
                     <div class="form-group">
                       <label>Email</label>
-                      <Input name={"email"} type={"email"} onChange={(e) =>
-                          setEmail({ [e.target.name]: e.target.value })} placeHolder={"Ingrese su E-mail"}/>
+                      <input
+                        name="email"
+                        type="email"
+                        value={order.email}
+                        onChange={(e) =>
+                          setEmail({ [e.target.name]: e.target.value })
+                        }
+                        class="form-control"
+                        placeholder="Ingrese su E-mail"
+                        required
+                      ></input>
                       <label>Nombre y Apellido</label>
-                      <Input name={"name"} type={"text"} onChange={(e) =>
+                      <input
+                        name="name"
+                        type="text"
+                        value={order.name}
+                        class="form-control"
+                        placeholder="Ingrese su Nombre"
+                        onChange={(e) =>
                           setName({ [e.target.name]: e.target.value })
-                        } placeHolder={"Ingrese su Nombre"}/>
+                        }
+                        required
+                      ></input>
                       <label>Dirección</label>
-                      <Input name={"address"} type={"text"} onChange={(e) =>
+                      <input
+                        name="address"
+                        type="text"
+                        value={order.adress}
+                        placeholder="Ingrese su Dirección"
+                        class="form-control"
+                        onChange={(e) =>
                           setAddress({ [e.target.name]: e.target.value })
-                        } placeHolder={"Ingrese su Dirección"}/>
+                        }
+                        required
+                      ></input>
                     </div>
                   </form>
                 </div>
@@ -169,10 +194,23 @@ const Cart = () => {
                   <Row>
                     <Col sm="12 buttonsForm">
                       <div className="col-sm-6">
-                        <ButtonSuccess text={"Checkout"} type={"submit"}  onClick={createOrder}/>
+                        <button
+                          onClick={createOrder}
+                          className="btn btn-success"
+                          type="submit"
+                        >
+                          Checkout
+                        </button>
                       </div>
                       <div className="col-sm-6 ">
                         <ButtonDark text={"Cancelar"} type={"submit"} onClick={() => setOrder({ showCheckout: false })} />
+                        <button
+                          onClick={() => setOrder({ showCheckout: false })}
+                          className="btn btn-dark"
+                          type="submit"
+                        >
+                          Cancelar
+                        </button>
                       </div>
                     </Col>
                   </Row>

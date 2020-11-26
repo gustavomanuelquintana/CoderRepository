@@ -7,12 +7,13 @@ import {
   PlusCircleIcon,
   MinusCircleIcon,
   CartIcon,
+  TrashIcon,
 } from "../../icons/index";
 import {
   ButtonPrimary,
   ButtonDanger,
-  ButtonDark
-} from "../../ComponentsGlobal/index";
+  ButtonDark,
+} from "../../ButtonGlobal/index";
 
 const Cartdetail = ({ product }) => {
   const { increase, decrease, removeItem } = useCartContext();

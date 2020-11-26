@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./cart.css";
 import Container from "react-bootstrap/Container";
 import Toast from "react-bootstrap/Toast";
@@ -7,21 +7,25 @@ import {
   PlusCircleIcon,
   MinusCircleIcon,
   CartIcon,
+  TrashIcon,
 } from "../../icons/index";
-import {
-  ButtonPrimary,
-  ButtonDanger,
-  ButtonDark
-} from "../../ComponentsGlobal/index";
 
 const Cartdetail = ({ product }) => {
   const { increase, decrease, removeItem } = useCartContext();
   const [show, setShow] = useState(false);
 
+
   const decreaseItem = () => {
     decrease(product);
     setShow(true);
   };
+ 
+  useEffect(() => {
+    console.log("mounted");
+    return () => {
+      console.log("dismounted");
+    };
+  }, [product]);
 
   return (
     <Container>
@@ -43,18 +47,28 @@ const Cartdetail = ({ product }) => {
           <p className="mb-0 typeSize">{product.cantidad}</p>
         </div>
         <div className="col-sm-3  text-right ">
-          <ButtonPrimary
-            text={<PlusCircleIcon width={"20px"} />}
-            onClick={() => increase(product)}
-          />
+          <button
+            onClick={()=>increase(product)}
+            className="btn btn-primary btn-sm mr-2 mb-1"
+          >
+            <PlusCircleIcon width={"20px"} />
+          </button>
+
           {product.cantidad > 0 && (
-            <ButtonDanger
-              text={<MinusCircleIcon width={"20px"} />}
-              onClick={decreaseItem}
-            />
+            <button
+              onClick={(decreaseItem)}
+              className="btn btn-danger btn-sm mb-1 mr-3"
+            >
+              <MinusCircleIcon width={"20px"} />
+            </button>
           )}
           {product.cantidad === 1 && (
-            <ButtonDark onClick={() => removeItem(product)} />
+            <button
+              onClick={()=>removeItem(product)}
+              className="btn btn-dark btn-sm mb-1"
+            >
+              <TrashIcon width={"20px"} />
+            </button>
           )}
           <Toast
             className="toast"

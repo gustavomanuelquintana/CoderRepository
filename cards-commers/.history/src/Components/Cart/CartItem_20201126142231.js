@@ -6,12 +6,12 @@ import "../Cart/CartItem.css";
 import Cartdetail from "./cart/cart";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import {ButtonPrimary,ButtonDark,ButtonSuccess,Input} from '../ComponentsGlobal/index';
 import { Link } from "react-router-dom";
 import { useCartContext } from "../Context/cartContext";
 import { ReturnIcon, TrashIcon } from "../icons/index";
 import imageHeader from "../../Images/imageHeader.png";
 import { getFirestore } from "../../firebase";
+import FinallyBuy from './FinallyBuy/FinallyBuy';
 
 const amountPrice = (cart, total, setTotal) => {
   let totalPrice = 0;
@@ -132,52 +132,30 @@ const Cart = () => {
                 <div className="col-sm-12 buttonDetailCart">
                   <Row>
                     <Col sm="6">
-                      <ButtonPrimary text={"Continuar"} onClick={()=> setOrder({ showCheckout: true })} />
+                      <button
+                        onClick={() => {
+                          setOrder({ showCheckout: true });
+                        }}
+                        className="btn btn-primary"
+                      >
+                        Continuar
+                      </button>
                     </Col>
                     <Col sm="6">
-                     <ButtonDark text={"Vaciar"} onClick={() => clear(cart)}/>
+                      <button
+                        onClick={() => clear(cart)}
+                        className="btn btn-dark"
+                      >
+                        Vaciar
+                        <TrashIcon width={"20px"} />
+                      </button>
                     </Col>
                   </Row>
                 </div>
               </div>
             )}
             {order.showCheckout && (
-              <div className=" divTest">
-                <div class="col-sm-12 totalItem">
-                  <h6>Finalización Compra</h6>
-                </div>
-                <hr />
-                <div className="col-sm-12">
-                  <form>
-                    <div class="form-group">
-                      <label>Email</label>
-                      <Input name={"email"} type={"email"} onChange={(e) =>
-                          setEmail({ [e.target.name]: e.target.value })} placeHolder={"Ingrese su E-mail"}/>
-                      <label>Nombre y Apellido</label>
-                      <Input name={"name"} type={"text"} onChange={(e) =>
-                          setName({ [e.target.name]: e.target.value })
-                        } placeHolder={"Ingrese su Nombre"}/>
-                      <label>Dirección</label>
-                      <Input name={"address"} type={"text"} onChange={(e) =>
-                          setAddress({ [e.target.name]: e.target.value })
-                        } placeHolder={"Ingrese su Dirección"}/>
-                    </div>
-                  </form>
-                </div>
-                <hr />
-                <div className="col-sm-12 buttonDetailCart">
-                  <Row>
-                    <Col sm="12 buttonsForm">
-                      <div className="col-sm-6">
-                        <ButtonSuccess text={"Checkout"} type={"submit"}  onClick={createOrder}/>
-                      </div>
-                      <div className="col-sm-6 ">
-                        <ButtonDark text={"Cancelar"} type={"submit"} onClick={() => setOrder({ showCheckout: false })} />
-                      </div>
-                    </Col>
-                  </Row>
-                </div>
-              </div>
+              <FinallyBuy />
             )}
           </Col>
         </Row>

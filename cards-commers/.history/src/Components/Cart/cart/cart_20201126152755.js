@@ -3,16 +3,8 @@ import "./cart.css";
 import Container from "react-bootstrap/Container";
 import Toast from "react-bootstrap/Toast";
 import { useCartContext } from "../../Context/cartContext";
-import {
-  PlusCircleIcon,
-  MinusCircleIcon,
-  CartIcon,
-} from "../../icons/index";
-import {
-  ButtonPrimary,
-  ButtonDanger,
-  ButtonDark
-} from "../../ComponentsGlobal/index";
+import {PlusCircleIcon,MinusCircleIcon,CartIcon,TrashIcon,} from "../../icons/index";
+import { ButtonPrimary } from "../../ButtonGlobal/index";
 
 const Cartdetail = ({ product }) => {
   const { increase, decrease, removeItem } = useCartContext();
@@ -43,18 +35,17 @@ const Cartdetail = ({ product }) => {
           <p className="mb-0 typeSize">{product.cantidad}</p>
         </div>
         <div className="col-sm-3  text-right ">
-          <ButtonPrimary
-            text={<PlusCircleIcon width={"20px"} />}
-            onClick={() => increase(product)}
-          />
+          <ButtonPrimary text={<PlusCircleIcon width={"20px"} />} onClick={()=>increase(product)}/>
           {product.cantidad > 0 && (
-            <ButtonDanger
-              text={<MinusCircleIcon width={"20px"} />}
-              onClick={decreaseItem}
-            />
+            <ButtonDanger text={<MinusCircleIcon width={"20px"}/>} onClick={(decreaseItem)} />
           )}
           {product.cantidad === 1 && (
-            <ButtonDark onClick={() => removeItem(product)} />
+            <button
+              onClick={()=>removeItem(product)}
+              className="btn btn-dark btn-sm mb-1"
+            >
+              <TrashIcon width={"20px"} />
+            </button>
           )}
           <Toast
             className="toast"

@@ -11,8 +11,8 @@ import {
 import {
   ButtonPrimary,
   ButtonDanger,
-  ButtonDark
-} from "../../ComponentsGlobal/index";
+  ButtonDark,
+} from "../../";
 
 const Cartdetail = ({ product }) => {
   const { increase, decrease, removeItem } = useCartContext();

@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 import Col from "react-bootstrap/Col";
 import ItemCount from "../../ItemCount/ItemCount";
 import { BuyIcon, TrackIcon } from "../../icons/index";
-import { ButtonSuccess } from "../../ComponentsGlobal/index";
+import {ButtonSuccess} from '../../ButtonGlobal/index';
 import "./ItemDetail.css";
 import { useCartContext } from "../../../Components/Context/cartContext";
 
@@ -126,7 +126,13 @@ function ItemDetail({ item }) {
                 {compra.cantidad <= 0
                   ? compra.isValid
                   : "no hay articulos" && (
-                      <ButtonSuccess text={"Comprar"} onClick={handleBuy} />
+                      <button
+                        onClick={handleBuy}
+                        class="btn btn-success btn-block"
+                      >
+                        <BuyIcon width={"20px"} />
+                        Comprar
+                      </button>
                     )}
               </Link>
             </div>

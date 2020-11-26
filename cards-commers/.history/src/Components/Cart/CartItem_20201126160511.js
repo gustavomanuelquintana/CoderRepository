@@ -152,15 +152,31 @@ const Cart = () => {
                     <div class="form-group">
                       <label>Email</label>
                       <Input name={"email"} type={"email"} onChange={(e) =>
-                          setEmail({ [e.target.name]: e.target.value })} placeHolder={"Ingrese su E-mail"}/>
+                          setEmail({ [e.target.name]: e.target.value })} placeholder="Ingrese su E-mail"/>
                       <label>Nombre y Apellido</label>
-                      <Input name={"name"} type={"text"} onChange={(e) =>
+                      <input
+                        name="name"
+                        type="text"
+                        value={order.name}
+                        class="form-control"
+                        placeholder="Ingrese su Nombre"
+                        onChange={(e) =>
                           setName({ [e.target.name]: e.target.value })
-                        } placeHolder={"Ingrese su Nombre"}/>
+                        }
+                        required
+                      ></input>
                       <label>Dirección</label>
-                      <Input name={"address"} type={"text"} onChange={(e) =>
+                      <input
+                        name="address"
+                        type="text"
+                        value={order.adress}
+                        placeholder="Ingrese su Dirección"
+                        class="form-control"
+                        onChange={(e) =>
                           setAddress({ [e.target.name]: e.target.value })
-                        } placeHolder={"Ingrese su Dirección"}/>
+                        }
+                        required
+                      ></input>
                     </div>
                   </form>
                 </div>
