@@ -39,6 +39,13 @@ function ItemDetailContainer({ tituloDetail }) {
 
   return (
     <>
+      {!loaded && (
+          <div class="spinner">
+            <Spinner animation="border" variant="success" />
+            <Spinner animation="border" variant="danger" />
+            <Spinner animation="border" variant="warning" />
+          </div>
+        )}
       <div className="containerDetail">
         <Row>
           <Col sm="2" xs="5">
@@ -56,13 +63,6 @@ function ItemDetailContainer({ tituloDetail }) {
             <h2>{tituloDetail}</h2>
           </Col>
         </Row>
-        {!loaded && (
-          <div class="spinner">
-            <Spinner animation="border" variant="success" />
-            <Spinner animation="border" variant="danger" />
-            <Spinner animation="border" variant="warning" />
-          </div>
-        )}
         <Row>
         {loaded && <ItemDetail key={itemDetail.id} item={itemDetail} />}
         </Row>

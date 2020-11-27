@@ -1,0 +1,15 @@
+.ListItemContainer{
+    text-align:center;
+    justify-content: center;
+    height:auto;
+    margin:auto;
+    padding:40px;
+}
+.info{
+    border-radius:5px;
+}
+
+p{
+    line-height: 5px;
+}
+

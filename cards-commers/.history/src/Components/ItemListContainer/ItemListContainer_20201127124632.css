@@ -1,7 +1,7 @@
 .ItemListContainer {
   width: 100%;
   text-align: center;
-  max-height: auto;
+  max-height: 100vh;
   margin: 0.25 auto;
   padding: 35px;
 }
@@ -25,10 +25,11 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  position:absolute;
 }
 .cabecera img {
-  width: 90px;
-  height: 80px;
+  width: 120px;
+  height: 100px;
   border-radius: 50px;
 }
 

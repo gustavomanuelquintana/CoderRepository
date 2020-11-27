@@ -1,0 +1,10 @@
+.Footer{
+    width:100%;
+    background:black;
+    height:50px;
+}
+.text-footer{
+    height:auto;
+    text-align: center;
+    color:white;
+}

@@ -1,0 +1,18 @@
+.Footer{
+    width:100%;
+    background:#343a40;
+    height:50px;
+    position:sticky;
+}
+.text-footer{
+    height:auto;
+    text-align: center;
+    color:white;
+    align-items: center;
+    padding:25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.text-footer span{
+    color: orange;
+    font-weight: bold;
+}

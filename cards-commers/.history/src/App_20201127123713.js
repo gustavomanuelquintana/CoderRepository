@@ -4,9 +4,9 @@ import { CartProvider, useCartContext } from "./Components/Context/cartContext";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import NavBar from "./Components/NavBar/NavBar";
 import CartItem from "./Components/Cart/CartItem";
-import Footer from './Components/Footer/Footer';
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -28,8 +28,8 @@ function App() {
               <CartItem titleCart="Proceso Finalización de Compra" />
             </Route>
           </Switch>
-          <Footer />
         </BrowserRouter>
+        <Footer />
       </Container-fluid>
     </CartProvider>
   );
