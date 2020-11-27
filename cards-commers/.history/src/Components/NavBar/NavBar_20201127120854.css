@@ -1,0 +1,69 @@
+.Logo-navBar {
+  max-height: 8em;
+  height: 70px;
+  max-width: 100px;
+  border-radius: 5px;
+}
+
+.navLinks {
+  color: black;
+  text-decoration: none;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.navLinks:hover{
+  text-decoration: none;
+  list-style: none;
+  border-bottom: orange;
+}
+#collasible-nav-dropdown {
+  color: black;
+}
+
+.dropdown-menu.show {
+  border-radius: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid orange;
+}
+.dropdown-menu.show li:hover {
+  background: orange;
+  font-weight: bold;
+  color:white;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.dropdown-menu.show li a {
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  font-family: "Titillium Web", sans-serif;
+}
+.dropdown {
+  border: 1px solid orange;
+  background: orange;
+  border-radius: 5px;
+  color: black;
+  display: block;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  transition: 0.5s all ease-in;
+  position: fixed;
+}
+
+.dropdown:hover {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  border: 1px solid orange;
+  transition: 1s all ease-out;
+}
+@media screen and (max-width: 768px) {
+  .NavBar {
+    border-bottom: 4px solid orange;
+    background: white;
+    position: sticky;
+    margin: auto;
+    text-align: center;
+  }
+}

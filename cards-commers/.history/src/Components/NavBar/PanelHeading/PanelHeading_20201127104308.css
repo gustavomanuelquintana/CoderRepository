@@ -1,0 +1,53 @@
+.panlIzq{
+    display:flex;
+    justify-content:left;
+    align-items:center;
+    margin-top: 3px;
+}
+.panlIzq img{
+    width:30px;
+    height:30px;
+    margin-left: 15px;
+}
+.panlIzq p{
+    color:grey;
+    font-family: "Titillium Web", sans-serif;
+    margin:0px 0 0 20px;
+    font-size: 0.8em;
+}
+.dateCentral{
+    background: #343a40;
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+    border-bottom: 2px solid white;
+    border-top: 3px solid white;
+}
+.dateCentral h6{
+    font-family: "Titillium Web", sans-serif;
+    color:white;
+    text-align: center;
+}
+.dateCentral span{
+    font-family: "Titillium Web", sans-serif;
+    background-color: orange;
+    border-radius:5px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+}
+
+.panlRight{
+    display:flex;
+    justify-content:right;
+    align-items:center;
+    margin-top: 3px;
+}
+
+.panlRight p{
+    color:grey;
+    font-family: "Titillium Web", sans-serif;
+    margin:0px 0 0 20px;
+    font-size: 0.8em;
+}

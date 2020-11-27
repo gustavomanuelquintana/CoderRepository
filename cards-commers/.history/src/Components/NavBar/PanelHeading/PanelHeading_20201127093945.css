@@ -1,0 +1,8 @@
+.panlIzq{
+    display:flex;
+    justify-content:left;
+}
+.panlIzq img{
+    width:50px;
+    height:50px;
+}

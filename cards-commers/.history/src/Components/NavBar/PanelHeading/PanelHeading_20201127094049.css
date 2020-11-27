@@ -1,0 +1,10 @@
+.panlIzq{
+    display:flex;
+    justify-content:left;
+    align-items:center;
+    text-align:left;
+}
+.panlIzq img{
+    width:35px;
+    height:35px;
+}

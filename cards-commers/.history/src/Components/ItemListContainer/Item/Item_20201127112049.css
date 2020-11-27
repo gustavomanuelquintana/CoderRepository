@@ -1,0 +1,60 @@
+.RowItems {
+    border:1px solid rgb(222, 222, 222);
+    border-radius:10px;
+    cursor:pointer;
+    display:block;
+    position:relative;
+}
+.RowItems:hover {
+    border-width: 1px;
+  border-style: solid;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      orange, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+.RowItems:hover img{
+    -ms-transform:scale(1.2);
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+/*Effect Image */
+
+img{
+    height:170px;
+    cursor:pointer;
+    display:block;
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+}
+
+p .details{
+    font-weight: bold;
+}
+
+.detailDeport{
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.detailMarca{
+    font-family: 'Titillium Web', sans-serif;
+}
+.precio{
+    line-height: 5px;
+}
+
+.sku{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.4em;
+}
+
+.cost{
+    color: #229acd;
+    font-size:0.6em;
+}
+
+
