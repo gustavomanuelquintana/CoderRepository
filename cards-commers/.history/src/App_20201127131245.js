@@ -27,9 +27,9 @@ function App() {
             <Route exact path="/cart">
               <CartItem titleCart="Proceso Finalización de Compra" />
             </Route>
+            <Footer />
           </Switch>
         </BrowserRouter>
-        <Footer />
       </Container-fluid>
     </CartProvider>
   );

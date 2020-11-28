@@ -69,7 +69,7 @@ const Cart = () => {
   return (
       <Container-fluid>
         <Row>
-          <Col sm="3" xs="5" className="mt-4">
+          <Col sm="3" xs="5">
             <Link class="regresar" to="/">
               {" "}
               <ul>

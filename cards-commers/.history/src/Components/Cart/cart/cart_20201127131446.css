@@ -1,0 +1,40 @@
+.col-container {
+  display: flex;
+}
+.no-gutters {
+  display: inline-flex;
+  border: 1px solid lightgrey;
+  padding: 50px 20px 0 0;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 5px;
+  border-collapse: collapse;
+}
+.toast {
+  position: absolute;
+  color: orange;
+  font-weight: bold;
+  font-family: "Titillium Web", sans-serif;
+  text-align: left;
+  width: 60%;
+  margin: 10px 150px 0;
+}
+.no-gutters {
+  align-items: center;
+}
+
+h5 {
+  font-family: "Titillium Web", sans-serif;
+  color: #229acd;
+}
+
+.typeSize {
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 1.5em;
+  font-family: "Titillium Web", sans-serif;
+}
+.detailItem {
+  margin: 5em auto;
+}

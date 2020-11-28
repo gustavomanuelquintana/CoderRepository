@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import * as firebase from "firebase/app";
 import "firebase/firestore";
+import Container from 'react-bootstrap/Container';
 import ModalWindow from "./Modal/Modal";
 import "../Cart/CartItem.css";
 import Cartdetail from "./cart/cart";
@@ -69,7 +70,7 @@ const Cart = () => {
   return (
       <Container-fluid>
         <Row>
-          <Col sm="3" xs="5" className="mt-4">
+          <Col sm="3" xs="5">
             <Link class="regresar" to="/">
               {" "}
               <ul>
@@ -80,7 +81,7 @@ const Cart = () => {
               </ul>
             </Link>
           </Col>
-          <Col sm="12" className="titleCart">
+          <Col sm="12">
             <h2>Carrito de Compras</h2>
           </Col>
         </Row>

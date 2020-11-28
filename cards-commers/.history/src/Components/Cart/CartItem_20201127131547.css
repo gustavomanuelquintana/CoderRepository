@@ -1,7 +1,7 @@
 .divTest {
   border: 1px solid lightgrey;
   border-radius: 10px;
-  height: auto;
+  height: 50px;
   width: 80%;
   margin: 0 50px 50px 50px;
 }
@@ -20,11 +20,6 @@
 }
 .itemGroup {
   margin-top: auto;
-
-}
-.titleCart{
-  text-align:center;
-  font-family: "Titillium Web", sans-serif;
 }
 .totalItemImg img {
   width: 80px;
