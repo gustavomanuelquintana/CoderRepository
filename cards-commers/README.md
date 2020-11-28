@@ -129,5 +129,5 @@ Ingresar Aquí: https://facebook.github.io/create-react-app/docs/deployment
 Ingresar Aquí: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 <br><br>
 
-***LIVE DEMO***https://imgflip.com/embed/4o56xk" //gif/4o56xk
-<a href="https://imgflip.com/gif/1at9w4"><img src="https://i.imgflip.com/embed/4o56xk.gif" title="made at imgflip.com"/></a>
+***LIVE DEMO***https://imgflip.com/embed/4o56xk"
+<a href="https://imgflip.com/gif/4o58dg"><img src="https://imgflip.com/gif/4o58dg" title="made at imgflip.com"/></a>
